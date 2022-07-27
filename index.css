@@ -1,0 +1,111 @@
+body {
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    background-color: #e8eaed;
+    border: 1px solid #dde0f2;
+    border-radius: 10px;
+    color: #8e9091;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    padding-top: 30px;
+}
+
+label {
+    display: block;
+	float: left;
+    line-height: 30px;
+}
+
+label, input, select {
+    margin: 10px 25px;
+    text-align: left;
+    width: 170px;
+}
+
+input, select {
+    width: 215px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #8e9091;
+    padding-left: 10px;
+}
+
+input[type=radio] {
+    width: auto;
+    height: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+label[for=male], label[for=female] {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    float: none;
+    cursor: pointer;
+}
+
+label[for=sexo] {
+    line-height: 20px;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button div {
+    width: 50%;
+    float: left;
+    text-align: left;
+    margin-left: 22px;
+}
+
+button {
+    background-color: #c4c8ff;
+    color: #7d6cfc;
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button div:nth-child(2) > button {
+    width: 80%;
+}
+
+.content-message {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.content-message p {
+    line-height: 7px;
+}
+
+.danger {
+    color: #ff1a23;
+}
+
+.success {
+    color: #3c8d3c;
+}

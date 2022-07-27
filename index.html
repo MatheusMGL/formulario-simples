@@ -1,0 +1,48 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    
+    <div class="content">
+        <h1>Cadastro de Funcionário</h1>
+        <form id="form">
+            <label>Nome:</label>
+            <input type="text" name="name"/>
+            <label>Email:</label>
+            <input type="email" id="email"/>
+            <label>Data de nascimento:</label>
+            <input type="text" name="date" onkeypress="dateMask(this, event)" maxlength="10"/>
+            <label>Escolaridade</label>
+            <select>
+                <option selected disabled></option>
+                <option value="1">Ensino Fundamental</option>
+                <option value="2">Ensino Médio</option>
+                <option value="3">Graduado</option>
+            </select>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Feminino</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Masculino</label>
+            <div class="button">
+                <div>
+                    <button type="button" onclick="resetForm()">Limpar</button>
+                </div>
+                <div>
+                    <button type="button" onclick="register()">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="content-message danger"></div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
